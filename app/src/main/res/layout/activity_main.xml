@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Movie name:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Review:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/etReview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter review" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Movie rating:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/etRating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter movie rating (PG13 / NC16 / M18 / R21)" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stars:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <RatingBar
+        android:id="@+id/ratingBarInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btnInsertMovie"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="INSERT Movie" />
+
+        <Button
+            android:id="@+id/btnShowList"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SHOW LIST"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click here to explore more movies:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/buttonWeb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Movies Database Website" />
+
+
+</LinearLayout>
